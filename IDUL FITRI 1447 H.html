@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Hari Raya Idul Fitri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #134e5e, #71b280);
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 20px;
+      width: 400px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      animation: fadeIn 2s ease;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      animation: slideDown 1.5s ease;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #ffe082;
+      animation: fadeIn 2s ease;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      animation: fadeIn 2.5s ease;
+    }
+
+    .footer {
+      margin-top: 25px;
+      font-size: 14px;
+      opacity: 0.9;
+      animation: fadeIn 3s ease;
+    }
+
+    /* Ketupat */
+    .ketupat {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #8bc34a;
+      transform: rotate(45deg);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .ketupat::before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: rgba(255,255,255,0.2);
+      top: 0;
+      left: 0;
+    }
+
+    .ketupat.left {
+      left: -25px;
+      top: 50px;
+    }
+
+    .ketupat.right {
+      right: -25px;
+      top: 100px;
+      animation-delay: 1s;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: rotate(45deg) translateY(0); }
+      50% { transform: rotate(45deg) translateY(-15px); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <div class="ketupat left"></div>
+  <div class="ketupat right"></div>
+
+  <h1>🌙 Selamat Hari Raya</h1>
+  <h2>Idul Fitri 1447 H</h2>
+
+  <p>
+    Taqabbalallahu minna wa minkum.<br><br>
+    Saya mengucapkan <b>Mohon Maaf Lahir dan Batin</b> 🙏<br><br>
+    Kalo selama saya melakukan banyak kesalahan, kalo ada kata yang gaenak di hati, ada salah secara fisik maupun yang lain-lain, tolong dimaafkan, karena manusia adalah tempat salah dan lupa, 
+    saya memohon maaf yang sebesar-besarnya.
+  </p>
+  <br>
+  <p>
+  🌙 Hadis Silaturahmi-                                                                
+
+Rasulullah ﷺ bersabda:
+
+“Sesungguhnya Allah menciptakan makhluk. Ketika Dia selesai menciptakan mereka, bangkitlah rahim (kekerabatan) lalu berkata:
+‘Ini adalah tempat orang yang berlindung kepada-Mu dari memutuskan hubungan.’
+
+Allah berfirman:
+‘Ya, tidakkah engkau ridha jika Aku menyambung orang yang menyambungmu dan memutus orang yang memutusmu?’
+
+Rahim menjawab:
+‘Tentu, wahai Tuhanku.’
+
+Allah berfirman:
+‘Maka itu untukmu.’”
+
+— (HR. Imam Bukhari dan Imam Muslim)
+  </p>
+
+  <div class="footer">
+    Semoga kita semua kembali suci dan dipenuhi keberkahan ✨<br><br>
+    — Akmal
+  </div>
+</div>
+
+</body>
+</html>
